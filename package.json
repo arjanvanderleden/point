@@ -9,7 +9,8 @@
     "start":"tsdx watch",
     "build":"tsdx build",
     "test":"tsdx test",
-    "lint":"eslint . --ext .ts,.tsx --fix",
+    "test:coverage": "tsdx test --coverage",
+    "lint":"tsdx lint src test --fix",
     "prepare":"tsdx build",
     "size":"size-limit",
     "analyze":"size-limit --why"
